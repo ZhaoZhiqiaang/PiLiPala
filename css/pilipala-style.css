@@ -1,0 +1,992 @@
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			img{
+				cursor: pointer;
+			}
+			.topheadborder{
+				width: 100%;
+				height: 50px;
+				background: darkblue;
+				position: fixed;
+				top: 0;
+				z-index: 100;
+				opacity: 0.7;
+			}
+			.tophead{
+				margin: auto;
+				width: 1600px;
+				height: 50px;
+				background: darkblue;
+				top: 0;
+				z-index: 100;
+				opacity: 0.7;
+				position: relative;
+			}
+			.topheadleft{
+				width: 70px;
+				height: 50px;
+				margin-left: 50px;
+				border-radius: 20px;
+				float: left;
+			}
+			.pilipala{
+				font-size: 35px;
+				font-weight: 900;
+				display: inline-block;
+				line-height: 50px;
+				color: white;
+				float: left;
+			}
+			.look{
+				width: 400px;
+				height: 40px;
+				position: absolute;
+				margin-left: 500px;
+				float: left;
+				background: white;
+				border-radius: 20px;	
+				margin-top: 8px;
+			}
+			.look>input{
+				border: none;
+				float: left;
+				width: 340px;
+				line-height: 40px;
+				border-radius: 20px;	
+			}
+			.look>img{
+				margin-top: 10px;
+				width: 30px;
+				line-height: 50px;
+				float: left;
+			}
+			.topheadright{
+				width: 300px;
+				height: 50px;
+				float: left;
+				position: absolute;
+				right: 0px;
+			}
+			.topheadright>li{
+				width: 120px;
+				margin-top: 10px;
+				display: inline-block;
+				float: left;
+				line-height: 50px;
+			}
+			.go1>img{
+				width: 100px;
+				height: 100px;
+				display: none;
+			}
+			.go2>img{
+				width: 300px;
+				height: 300px;
+				display: none;
+				position: absolute;
+				z-index: 500;
+			}
+			.topheadright>li>img{
+				width: 100px;
+				height: 100px;
+				display: none;
+			}
+			.topheadright>li>a{
+				text-align: center;
+				color: white;
+				width: 78px;
+				line-height: 40px;
+				display: inline-block;
+				font-size: 30px;
+				border-radius: 20px;
+				float: left;
+			}
+			.topheadright>li>a:hover{
+				background: #00FFFF;
+			}
+			.topheadright>img{
+				width: 40px;
+				height: 40px;
+				margin-left: 10px;
+				margin-top: 10px;
+			}
+			.fixed1{
+				position: fixed;
+				width: 40px;
+				height: 70px;
+				background: aqua;
+				top: 100px;
+				right: 0;
+				border-radius: 5px;
+			}
+			.fixed2{
+				position: fixed;
+				width: 40px;
+				height: 70px;
+				background: greenyellow;
+				top: 170px;
+				right: 0;	
+				border-radius: 5px;
+			}
+			.headboder{
+				width: 100%;
+				height: 700px;
+				background: black;
+			}
+			.headright{
+				width: 500px;
+				height: 700px;
+				background: black;
+				margin-left: 1100px;
+				opacity: 0.7;
+				position: relative;
+			}
+			.nav{
+				width: 400px;
+				position: absolute;
+				margin-top: 70px;
+				margin-left: 20px;
+			}
+			.first{
+				width: 400px;
+				line-height: 45px;
+				margin-left: 15px;
+				border-bottom: 1px solid white;
+			}
+			.nav>h1>a{
+				font-size: 35px;
+				display: inline-block;
+				color: white;
+				margin-left: 50px;
+			}
+			.nav>h1>a:hover{
+				color: red;
+			}
+			.nav>li>a:hover{
+				color: red;	
+			}
+			.nav>li>a{
+				text-align: center;
+				margin-left: 20px;
+				width: 230px;
+				line-height: 50px;
+				margin-top: 15px;
+				display: inline-block;
+				font-size: 30px;
+				font-weight:900 ;
+				color: #FFFFFF;
+				border-radius: 20px;
+			}
+			.nav>li>a:hover{
+				font-size: 40px;
+				background:darkorange;
+				box-shadow: 10px 10px 5px #888888;
+			}
+			.head{
+				width: 1600px;
+				height: 700px;
+				background:black;
+				position: relative;
+				margin: auto;
+				background-image: url(../img/44.gif);
+				background-position:10px 10px;
+			}
+			#left{
+				color: wheat;
+				font-size: 60px;
+				text-align: center;
+				position: absolute;
+				width: 80px;
+				line-height: 150px;
+				background: gray;
+				top: 350px;
+				cursor: pointer;	
+				opacity: 0;
+				z-index: 10;
+				border-radius: 20px;
+			}
+			#right{
+				color: wheat;
+				font-size: 60px;
+				text-align: center;
+				position: absolute;
+				width: 80px;
+				line-height: 150px;
+				background: gray;
+				top: 350px;
+				right: 500px;
+				cursor: pointer;
+				opacity: 0;
+				z-index: 10;
+				border-radius: 20px;
+			}
+			.head>img{
+				display: inline-block;
+				width: 500px; 
+				height: 300px;
+				float: left;
+				position: absolute;
+				opacity: 0.5;
+			}
+			.headimg1{
+				z-index: 2;
+				top: 150px;
+				left: 50px;
+			}
+			.headimg2{
+				z-index: 3;
+				left: 300px;
+				top: 250px;
+			}
+			.headimg3{
+				z-index: 2;
+				top: 150px;
+				left: 600px;
+			}
+			.headimg4{
+				z-index: 1;
+				top: 60px;
+				left: 300px;
+			}
+			.headbottom{
+				bottom: 0px;
+				position: absolute;
+				width: 1100px;
+				height: 110px;
+				background: black;
+				margin: auto;
+				opacity: 0.7;
+			}
+			.headimg{
+				margin-left: 110px;
+			}
+			.headbottom .headimg>img{
+				width: 200px;
+				height: 110px;
+				margin-left: 20px;
+				opacity: 0.5;
+			}
+			.headbottom .headimg>img:hover{
+				opacity: 50;
+			}
+			.main1border{
+				height: 160px;
+				width: 100%;
+				background: black;
+			}
+			.main1{
+				background-image:url(../img/44.gif) ;
+				height: 160px;
+				width: 1600px;
+				margin: auto;
+			}
+			.main1>div{
+				float: left;
+				width: 330px;
+				line-height: 50px;
+				background:grey;
+				border-radius: 40px;
+				margin-left: 65px;
+				margin-top: 13px;
+			}
+			.main1>div>a{
+				margin-left: 20px;
+				font-size: 25px;
+				color: black;
+			}
+			.main1>div>a:hover{
+				color: yellow;
+			}
+			.main2border{
+				width: 100%;
+				height: 100px;
+				background: black;
+			}
+			.main2{
+				width: 1600px;
+				line-height: 100px;
+				background-image: url(../img/44.gif);
+				margin: auto;
+				position: relative;
+			}
+			.main2left{
+				margin-top: 20px;
+				color: white;
+				font-size: 50px;
+				font-weight: 900;
+				float: left;
+			}
+			.main2right{
+				margin-top: 20px;
+				width: 110px;
+				line-height: 50px;
+				background: salmon;
+				float: left;
+				border-radius: 20px;
+				position: absolute;
+				right: 0;
+				box-shadow: 10px 10px 5px #888888;
+			}
+			.main2right1{
+				text-align: center;
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				cursor: pointer;
+				color: white;
+				font-size: 30px;
+				font-weight: 900;
+			}
+			.main2right2{
+				text-align: center;
+				width: 40px;
+				height: 40px;
+				display: inline-block;
+				margin-left: 20px;
+				cursor: pointer;
+				color: white;
+				font-size: 30px;
+				font-weight: 900;
+			}
+			.main3border{
+				width: 100%;
+				height: 300px;
+				background: black;
+			}
+			.main3{
+				width: 1600px;
+				height: 300px;
+				background-image:url(../img/44.gif);
+				margin: auto;
+				color: aliceblue;
+				position: relative;
+				overflow: hidden;
+			}
+			.main3imgs{
+				position: absolute;
+				width: 3200px;
+				height: 300px;
+				left: 0px;
+			}
+			.main3img{
+				width: 300px;
+				height: 200px;
+				background: salmon;
+				margin-left: 90px;
+				margin-top: 50px;
+				float: left;
+			}
+			.main3img>img{
+				width: 300px;
+				height: 200px;
+			}
+			.main4border{
+				width: 100%;
+				height: 90px;
+				background: black;
+			}
+			.main4{
+				width: 1600px;
+				height: 90px;
+				background-image:url(../img/44.gif);
+				margin: auto;
+				position: relative;
+			}
+			.main4left{
+				margin-top: 20px;
+				color: white;
+				font-size: 50px;
+				font-weight: 900;
+				float: left;
+			}
+			.main4right{
+				margin-top: 20px;
+				width: 110px;
+				line-height: 50px;
+				background: salmon;
+				float: left;
+				border-radius: 20px;
+				position: absolute;
+				right: 0;
+				box-shadow: 10px 10px 5px #888888;
+			}
+			.main4right1{
+				text-align: center;
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				cursor: pointer;
+				color: white;
+				font-size: 30px;
+				font-weight: 900;
+			}
+			.main4right2{
+				text-align: center;
+				width: 40px;
+				height: 40px;
+				display: inline-block;
+				margin-left: 20px;
+				cursor: pointer;
+				color: white;
+				font-size: 30px;
+				font-weight: 900;
+			}
+			.main5border{
+				width: 100%;
+				height: 300px;
+				background: black;
+			}
+			.main5{
+				width: 1600px;
+				height: 300px;
+				background-image:url(../img/44.gif);
+				margin: auto;
+				color: aliceblue;
+				font-size: 50px;
+				font-weight: 900;
+				position: relative;
+				overflow: hidden;
+			}
+			.main5imgs{
+				position: absolute;
+				width: 3200px;
+				height: 300px;
+				left: 0px;
+				
+			}
+			.main5img{
+				width: 300px;
+				height: 200px;
+				background: salmon;
+				margin-left: 90px;
+				margin-top: 50px;
+				float: left;
+			}
+			.main5img>img{
+				width: 300px;
+				height: 200px;
+			}
+			.main6border{
+				width: 100%;
+				height: 90px;
+				background: black;
+			}
+			.main6{
+				width: 1600px;
+				height: 90px;
+				background-image:url(../img/44.gif);
+				margin: auto;
+				position: relative;
+			}
+			.main6left{
+				margin-top: 10px;
+				color: white;
+				font-size: 50px;
+				font-weight: 900;
+				float: left;
+			}
+			.main6nav{
+				width: 1100px;
+				height: 50px;
+				float: left;
+				margin-left: 20px;
+				margin-top: 20px;
+			}
+			.main6nav>li>a{
+				text-align: center;
+				background: deeppink;
+				display: inline-block;
+				float: left;
+				width: 150px;
+				line-height: 40px;
+				margin-left: 20px;
+				border-radius: 40px;
+				color: black;
+				font-size: 20px;
+				font-weight: 900;
+				box-shadow: 10px 10px 5px #888888;
+			}
+			.main6nav>li>a:hover{
+				color: white;
+				background: orange;
+			}
+			.main6right{
+				margin-top: 20px;
+				width: 110px;
+				line-height: 50px;
+				background: salmon;
+				float: left;
+				border-radius: 20px;
+				position: absolute;
+				right: 0;
+				box-shadow: 10px 10px 5px #888888;
+			}
+			.main6right1{
+				text-align: center;
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				cursor: pointer;
+				color: white;
+				font-size: 30px;
+				font-weight: 900;
+			}
+			.main6right2{
+				text-align: center;
+				width: 40px;
+				height: 40px;
+				display: inline-block;
+				margin-left: 20px;
+				cursor: pointer;
+				color: white;
+				font-size: 30px;
+				font-weight: 900;
+			}
+			.main7border{
+				width: 100%;
+				height: 410px;
+				background: black;
+			}
+			.main7{
+				width: 1600px;
+				height: 410px;
+				background-image:url(../img/44.gif);
+				margin: auto;
+				position: relative;
+			}
+			.main7left{
+				float: left;
+			}
+			.main7rightborder{
+				width: 980px;
+				height: 410px;
+				overflow: hidden;
+				position: relative;
+			}
+			.main7right{
+				position: absolute;
+				float: left;
+				width: 2000px;
+				height: 410px;
+				left: 0px;
+			}
+			.main7righ>div{
+				width: 300px;
+				height: 170px;
+				float: left;
+				border-radius: 30px;
+			}
+			.main7rightimg>img{
+				margin-left: 25px;
+				margin-top: 20px;
+				float: left;
+				width: 300px;
+				height: 170px;
+			}
+			.main8border{
+				width: 100%;
+				height: 90px;
+				background: black;
+			}
+			.main8all{
+				width: 1600px;
+				height: 90px;
+				background-image:url(../img/44.gif);
+				position: relative;
+				margin: auto;
+			}
+			.main8{
+				width: 1000px;
+				height: 90px;
+				position: relative;
+				float: left;
+			}
+			.main8left{
+				margin-top: 10px;
+				color: white;
+				font-size: 50px;
+				font-weight: 900;
+				float: left;
+			}
+			.main8right{
+				margin-top: 20px;
+				width: 110px;
+				line-height: 50px;
+				background: salmon;
+				float: left;
+				border-radius: 20px;
+				position: absolute;
+				right: 0;
+				box-shadow: 10px 10px 5px #888888;
+			}
+			.main8right1{
+				text-align: center;
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				cursor: pointer;
+				color: white;
+				font-size: 30px;
+				font-weight: 900;
+			}
+			.main8right2{
+				text-align: center;
+				width: 40px;
+				height: 40px;
+				display: inline-block;
+				margin-left: 20px;
+				cursor: pointer;
+				color: white;
+				font-size: 30px;
+				font-weight: 900;
+			}
+			.main8right3{
+				text-align: center;
+				width: 600px;
+				line-height: 90px;
+				font-size: 40px;
+				font-weight: 900;
+				color: white;
+				float: left;
+				border-radius:40px ;
+			}
+			.main9border{
+				width: 100%;
+				height: 900px;
+				background: black;
+			}
+			.main9{
+				width: 1600px;
+				height: 900px;
+				background-image:url(../img/44.gif);
+				color: aliceblue;
+				position: relative;
+				overflow: hidden;
+				margin: auto;
+			}
+			.main9left{
+				width: 1000px;
+				height: 900px;
+				position: relative;
+				overflow: hidden;
+				float: left;
+			}
+			.main9imgs{
+				position: absolute;
+				width: 2200px;
+				height: 900px;
+				left: 0px;
+			}
+			.main9imgs>div{
+				width: 300px;
+				height: 400px;
+				float: left;
+				background: #00FFFF;
+				margin-left: 25px;
+				margin-top: 20px;
+			}
+			.main9img>img{
+				width: 300px;
+				height: 400px;
+			}
+			.main9right{
+				margin-left: 25px;
+				width: 550px;
+				height: 900px;
+				float: left;
+			}
+			.main9nav>li{
+				text-align: center;
+			}
+			.main9nav>li>a{
+				color: white;
+				display: inline-block;
+				text-align: center;
+				width: 400px;
+				line-height: 100px;
+				margin-top: 20px;
+				font-size: 30px;
+				font-weight: 900;
+				border-radius: 20px;
+				position: relative;
+			}
+			.main9nav>li>a:hover{
+				background: lemonchiffon;
+				color: red;
+				font-size: 35px;
+				box-shadow: 10px 10px 5px #888888;
+			}
+			.main10border{
+				width: 100%;
+				height: 90px;
+				background: black;
+			}
+			.main10all{
+				width: 1600px;
+				height: 90px;
+				background-image:url(../img/44.gif);
+				position: relative;
+				margin: auto;
+			}
+			.main10{
+				width: 1000px;
+				height: 90px;
+				position: relative;
+				float: left;
+			}
+			.main10left{
+				margin-top: 10px;
+				color: white;
+				font-size: 50px;
+				font-weight: 900;
+				float: left;
+			}
+			.main10right{
+				margin-top: 20px;
+				width: 110px;
+				line-height: 50px;
+				background: salmon;
+				float: left;
+				border-radius: 20px;
+				position: absolute;
+				right: 0;
+				box-shadow: 10px 10px 5px #888888;
+			}
+			.main10right1{
+				text-align: center;
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				cursor: pointer;
+				color: white;
+				font-size: 30px;
+				font-weight: 900;
+			}
+			.main10right2{
+				text-align: center;
+				width: 40px;
+				height: 40px;
+				display: inline-block;
+				margin-left: 20px;
+				cursor: pointer;
+				color: white;
+				font-size: 30px;
+				font-weight: 900;
+			}
+			.main10right3{
+				text-align: center;
+				width: 600px;
+				line-height: 90px;
+				font-size: 40px;
+				font-weight: 900;
+				color: white;
+				float: left;
+				border-radius:40px ;
+			}
+			.main11border{
+				width: 100%;
+				height: 900px;
+				background: black;
+			}
+			.main11{
+				width: 1600px;
+				height: 900px;
+				background-image:url(../img/44.gif);
+				color: aliceblue;
+				position: relative;
+				overflow: hidden;
+				margin: auto;
+			}
+			.main11left{
+				width: 1000px;
+				height: 900px;
+				position: relative;
+				overflow: hidden;
+				float: left;
+			}
+			.main11imgs{
+				position: absolute;
+				width: 2200px;
+				height: 900px;
+				left: 0px;
+			}
+			.main11imgs>div{
+				width: 300px;
+				height: 400px;
+				float: left;
+				background: #00FFFF;
+				margin-left: 25px;
+				margin-top: 20px;
+			}
+			.main11img>img{
+				width: 300px;
+				height: 400px;
+			}
+			.main11right{
+				margin-left: 25px;
+				width: 550px;
+				height: 900px;
+				float: left;
+			}
+			.main11nav>li{
+				text-align: center;
+			}
+			.main11nav>li>a{
+				color: white;
+				display: inline-block;
+				text-align: center;
+				width: 400px;
+				line-height: 100px;
+				margin-top: 25px;
+				font-size: 30px;
+				font-weight: 900;
+				border-radius: 20px;
+				position: relative;
+			}
+			.main11nav>li>a:hover{
+				background: lemonchiffon;
+				color: red;
+				font-size: 35px;
+				box-shadow: 10px 10px 5px #888888;
+			}
+			.main12border{
+				width: 100%;
+				height: 90px;
+				background: black;
+			}
+			.main12all{
+				width: 1600px;
+				height: 90px;
+				background-image:url(../img/44.gif);
+				position: relative;
+				margin: auto;
+			}
+			.main12{
+				width: 1000px;
+				height: 90px;
+				position: relative;
+				float: left;
+			}
+			.main12left{
+				margin-top: 10px;
+				color: white;
+				font-size: 50px;
+				font-weight: 900;
+				float: left;
+			}
+			.main12right{
+				margin-top: 20px;
+				width: 110px;
+				line-height: 50px;
+				background: salmon;
+				float: left;
+				border-radius: 20px;
+				position: absolute;
+				right: 0;
+				box-shadow: 10px 10px 5px #888888;
+			}
+			.main12right1{
+				text-align: center;
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				cursor: pointer;
+				color: white;
+				font-size: 30px;
+				font-weight: 900;
+			}
+			.main12right2{
+				text-align: center;
+				width: 40px;
+				height: 40px;
+				display: inline-block;
+				margin-left: 20px;
+				cursor: pointer;
+				color: white;
+				font-size: 30px;
+				font-weight: 900;
+			}
+			.main12right3{
+				text-align: center;
+				width: 600px;
+				line-height: 90px;
+				font-size: 40px;
+				font-weight: 900;
+				color: white;
+				float: left;
+				border-radius:40px ;
+			}
+			.main13border{
+				width: 100%;
+				height: 900px;
+				background: black;
+			}
+			.main13{
+				width: 1600px;
+				height: 900px;
+				background-image:url(../img/44.gif);
+				color: aliceblue;
+				position: relative;
+				overflow: hidden;
+				margin: auto;
+			}
+			.main13left{
+				width: 1000px;
+				height: 900px;
+				position: relative;
+				overflow: hidden;
+				float: left;
+			}
+			.main13imgs{
+				position: absolute;
+				width: 2200px;
+				height: 900px;
+				left: 0px;
+			}
+			.main13imgs>div{
+				width: 300px;
+				height: 400px;
+				float: left;
+				background: #00FFFF;
+				margin-left: 25px;
+				margin-top: 20px;
+			}
+			.main13img>img{
+				width: 300px;
+				height: 400px;
+			}
+			.main13right{
+				margin-left: 25px;
+				width: 550px;
+				height: 900px;
+				float: left;
+			}
+			.main13nav>li{
+				text-align: center;
+			}
+			.main13nav>li>a{
+				color: white;
+				display: inline-block;
+				text-align: center;
+				width: 400px;
+				line-height: 100px;
+				margin-top: 25px;
+				font-size: 30px;
+				font-weight: 900;
+				border-radius: 20px;
+				position: relative;
+			}
+			.main13nav>li>a:hover{
+				background: lemonchiffon;
+				color: red;
+				font-size: 35px;
+				box-shadow: 10px 10px 5px #888888;
+			}
