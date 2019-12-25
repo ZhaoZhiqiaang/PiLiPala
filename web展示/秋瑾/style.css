@@ -1,0 +1,139 @@
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	cursor: pointer;
+}
+.head1{
+	width:2500px;
+	position: relative;
+	margin:0 auto;
+}
+.head1>img{
+	width:2500px;
+}
+#text{
+	position: absolute;
+	right: 0;
+	top: 150px;
+}
+.head2{
+	width: 1900px;
+	height: 65px;
+	position: relative;
+	margin:0 auto;
+}
+.list{
+	width: 1900px;
+	height: 65px;
+	background: #ccc;
+	margin:0;
+	position: relative;
+	border-radius:5px;
+}
+.head3{
+	width: 1900px;
+	float: left;
+}
+.head3>li{
+	width: 120px;
+	height: 40px;
+	display: inline-block;
+	background: white;
+	float: left;
+	margin-left: 50px;
+	text-align: center;
+	border-radius:5px;
+}
+.head3>li>a{
+	font-size:20px ;
+	width: 80px;
+	height: 40px;
+	margin: 7px auto;
+	display:block;
+	color:black;
+}
+
+
+
+.box{
+	width:1600px;
+	height:700px;
+	margin:0 150px;
+	position:relative;
+	overflow:hidden;
+}
+.slider{
+	width:10200px;
+	position: relative;
+	left:-1600px;
+}
+.slide{
+	width:1600px;
+	overflow:hidden;
+	float:left ;
+}
+.nav{
+	position:relative;
+	margin:0 auto;
+}
+.nav>li{
+	position:relative;
+	float:left;
+	width:20px;
+	height:20px;
+	background:white;
+	cursor:pointer;
+	margin:0 10px;
+	border-radius:50%;
+	text-align:center;
+}
+.nav .active{
+	background:#ccc;
+}
+.slide>img{
+	width:1600px;
+}
+.body0{
+	width:1900px;
+	margin:0 auto;
+}
+.body1{
+	height:50px;
+	margin:10px 0;
+	position:relative;
+}
+.body1>span{
+	text-align:left;
+	font-size:40px;
+}
+.body2{
+	height:320px;
+	margin:10px 0;
+	position:relative;
+}
+.body3{
+	width:300px;
+	height:300px;
+	margin:0 30px;
+	position:relative;
+	display: inline-block;
+}
+.body3>img{
+	width:300px;
+	height:200px;
+}
+.body3>a{
+	margin-top:10px;
+	text-align:left;
+	text-decoration:underline;
+	font-size:20px;
+	position:relative;
+}
+.body4>img{
+	width:1900px;
+	margin:10px 0;
+}		

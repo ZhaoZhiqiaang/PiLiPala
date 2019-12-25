@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>作业</title>
+	<link rel="stylesheet" href="2.css">
+	<script src="js/animate.js"></script>
+	<style>
+	  body{
+	   margin: 0px;
+	   padding: 0px;
+	  }
+	  .red{
+	   background-color:red;
+	   width:200px;
+	   height:200px;
+	   position:relative;
+	   left:-200px;
+	   top:0px;
+	  }
+	  .blue{
+	   
+	   width:20px;
+	   height:50px;
+	   position:absolute;
+	   left:200px;
+	   top:75px;
+	  }
+	</style>
+	<style>
+		.box1{
+		    width:1200px;
+		    height:395px;
+		    border:1px solid red;
+		    margin:100px auto;
+		    position: relative;
+		    overflow:hidden;
+		    top:-100px;
+		}
+		.slider{
+		    width:8400px;
+		    position:absolute;
+		    left:-1200px;
+		}
+		.slide{
+		    width:1200px;
+		    float:left;
+		}
+		.box1>span{
+		    display: block;
+		    width:30px;
+		    height: 50px;
+		    text-align: center;
+		    cursor:pointer;
+		    top:175px;
+		    line-height: 50px;
+		    background: rgb(255,0,0);
+		    font-size: 30px;
+		    position: absolute;
+		    opacity: 0;
+		}
+		#left{
+		    top: 220px;
+		    left:30px;
+		
+		}
+		#right{
+		    top: 220px;
+		    right: 30px;
+		}
+		.na{
+		    position: absolute;
+		    left:520px;
+		    bottom:20px;
+		}
+		.na>li{
+		    float:left;
+		    width: 20px;
+		    height: 20px;
+		    background: #ccc;
+		    cursor: pointer;
+		    margin: 0 10px;
+		    border-radius: 50%;
+		    float: left;
+		}
+		.na.actived{
+		    background:red;
+		}
+			
+		.box img{
+			width: 1200px;
+			height: 400px;
+		}
+		
+	</style>
+	<style>
+		.headright{
+			width: 500px;
+			height: 500px;
+			background: url(img/timg5.gif);
+			margin-left: 600px;
+			position: relative;
+			margin-top: -450px;
+		}
+		.nav1{
+			width: 400px;
+			position: absolute;
+			margin-top: 10px;
+			margin-left: 20px;
+		}
+		.first{
+			width: 400px;
+			line-height: 45px;
+			margin-left: 20px;
+			border-bottom: 1px solid white;
+		}
+		.nav1>h1>a{
+			color: white;
+		}
+		.nav1>h1>a:hover{
+			color: red;
+		}
+		.nav1>li>a:hover{
+			color: red;	
+		}
+		.nav1>li{
+			margin-left: 20px;
+			margin-top: 15px;
+			display: inline-block;
+			width: 400px;
+			height: 50px;
+		}
+		.nav1>li>a{
+			font-size: 30px;
+			font-weight:900 ;
+			color: #FFFFFF;
+		}
+		.nav1>li>a:hover{
+			font-size: 40px;
+		}
+	</style>
+</head>
+<body onload=time1()>
+	<div class="header-wrap1">
+		<div class="header1">
+		<p>
+		动态
+		<a href="#">历史</a>
+		<a href="#">创作中心</a>
+		<a href="#">登录</a>
+        <a href="#">注册</a>
+        <span style="padding-right:7px"><a href="#">投稿</a></span>
+		<img src="images/wb.png" >
+		<img src="images/wx.png" >
+	    </p>			
+	    </div>
+	</div>
+	<div class="header-wrap2">
+		<div class="header2">
+			<div class="search">
+				<form action="#">
+					<input type="text" name="text" placeholder="郑爽张恒">
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="header-wrap3">
+		<div class="header3">
+				<ul class="menu">
+					<li><a href="">首页</a></li>
+					<li><a href="">动画</a></li>
+					<li><a href="">番剧</a></li>
+					<li><a href="">原创</a></li>
+					<li><a href="">娱乐</a></li>
+					<li><a href="">广告</a></li>
+					<li><a href="">影视</a></li>
+					<li><a href="">直播</a></li>
+					<li><a href="">专栏</a></li>
+					<li style="margin-right: 0px;"><a href="">生活</a></li>
+				</ul>
+		</div>
+	</div>
+	<div class="tupian">
+		<div id="box1" class="box1">
+		    <div class="slider" id="slider">                        
+		        <div class="slide"><img src="js/imgs/xx.png"  alt=""></div>
+		        <div class="slide"><img src="js/imgs/cc.png"  alt=""></div>
+		        <div class="slide"><img src="js/imgs/vv.png"  alt=""></div>
+		        <div class="slide"><img src="js/imgs/zz.png"  alt=""></div>
+		        <div class="slide"><img src="js/imgs/bb.png"  alt=""></div>
+		        <div class="slide"><img src="js/imgs/xx.png"  alt=""></div>
+		        <div class="slide"><img src="js/imgs/b1.png"  alt=""></div>
+		    </div>
+		    <span id="left"></span>
+		    <span id="right"></span>
+		    <ul class="na" id="na">
+		        <li class="actived"></li>
+		        <li></li>
+		        <li></li>
+		        <li></li>
+		        <li></li>
+		    </ul>
+		</div>
+	</div>
+	<div class="shouye-wrap">
+		<div class="shouye">
+			<p style="color:violet;font-size: 20px;">
+				当日热点新闻
+			</p>
+		</div>
+	</div>
+	<div class="yushi-wrap">
+		<div class="yushi">
+         <div id="text">
+			</div>
+		</div>
+		<script>
+		  var divTyping = document.getElementById('text')
+		  var i = 0,
+		    time = 0,
+		    str = '据悉，这是易烊千玺首次举办个人演唱会，合作了一位圈内有名的摄影师。12月20号，该摄影师发布了一段易烊千玺个人演唱会的概念宣传片，宣传片中主题定为“玉尔”，即拆开的“玺”字，创意十足。但这一视频却被发现疑似大量抄袭韩国男子组合防弹少年团的MV'
+		
+		  function typing () {
+		    if (i <= str.length){
+		      divTyping.innerHTML = str.slice(0, i++) + '_'
+		      time = setTimeout(typing, 200)
+		    }
+		    else {
+		      divTyping.innerHTML = str//结束打字,移除 _ 光标
+		      clearTimeout(time)
+		    }
+		  }
+		
+		  typing()
+		</script>
+	</div>
+	<div class="nav-wrap">
+		<div class="nav">
+			<ul>
+				<li>
+						<img src="images/1.png">
+						<div class="yinbi" style="margin-top: -43px">
+							<p>吐槽大会，都是狠角色</p>
+							<p>邓亚萍吐槽男篮</p>
+						</div>
+						<div class="chuxian">
+							<p>吐槽大会，都是狠角色</p>
+							<p>邓亚萍吐槽男篮</p>
+						</div>
+				</li>
+				<li>
+
+					<img style="margin-top:2px;" src="images/2.png">
+					<div class="yinbi">
+					<p>跨界歌王</p>
+					<p>明星对抗</p>
+				    </div>
+				    <div class="chuxian">
+					<p>跨界歌王</p>
+					<p>明星对抗</p>
+				    </div>
+				</li>
+				<li>
+					<img style="margin-top:1px;" src="images/3.png">
+					<div class="yinbi">
+					<p>电影幕后</p>
+					<p>对话明星</p>
+				    </div>
+				    <div class="chuxian">
+					<p>电影幕后</p>
+					<p>对话明星</p>
+				    </div>
+				</li>
+				<li>
+					<img style="margin-top:1px;" src="images/4.png">
+					<div class="yinbi">
+					<p>我家那宝贝</p>
+					<p>孟非谈育儿</p>
+				    </div>
+				    <div class="chuxian"> 
+					<p>我家那宝贝</p>
+					<p>孟非谈育儿</p>
+				    </div>
+				</li>
+				<li>
+					<img style="margin-top:1px;" src="images/5.png">
+					<div class="yinbi">
+					<p>江苏卫视</p>
+					<p>男团来袭</p>
+				    </div>
+				    <div class="chuxian">
+					<p>江苏卫视</p>
+					<p>男团来袭</p>
+				    </div>
+				</li>
+				<li>
+					<img style="margin-top:1px;" src="images/6.png">
+					<div class="yinbi">
+					<p>亲爱的客栈</p>
+					<p>张翰想退出？</p>
+				    </div>
+				    <div class="chuxian">
+					<p>亲爱的客栈</p>
+					<p>张翰想退出？</p>
+				    </div>
+				</li>
+				<li>
+					<img style="margin-top:1px;" src="images/7.png">
+					<div class="yinbi">
+					<p>我家那闺女</p>
+					<p>吴昕来了</p>
+				    </div>
+				    <div class="chuxian">
+					<p>我家那闺女</p>
+					<p>吴昕来了</p>
+				    </div>
+				</li>
+				<li>
+					<img style="margin-top:1px;" src="images/8.png">
+					<div class="yinbi">
+					<p>rise</p>
+					<p>首发新歌</p>
+				    </div>
+				    <div class="chuxian">
+					<p>rise</p>
+					<p>首发新歌</p>
+				    </div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="tt">
+		<div class="wrap">
+			<div id="box">
+			    <button class="active">郑爽</button>
+			    <button>杨颖</button>
+			    <button>杨幂</button>
+			    <div style="display: block;"><img src="img/timg10.gif" alt=""></div>
+			    <div><img src="img/timg12.gif" alt=""></div>
+			    <div><img src="img/timg13.gif" alt=""></div>
+			</div>
+			<div class="right">
+				<div id="headright" class="headright">
+					<ul id="nav1" class="nav1">
+						<h1 id="first" class="first"><a href="#">大家都在看</a></h1>
+						<li><a href="#" class="name">郑爽张恒分手</a></li>
+						<li><a href="#" class="name">杨幂魏大勋</a></li>
+						<li><a href="#" class="name">杨颖新加综艺</a></li>
+						<li><a href="#" class="name">潮流合伙人</a></li>
+						<li><a href="#" class="name">你期待和谁跨年</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<style>
+		.ww{
+			height: 200px;
+			width:1200px;
+			background: mediumvioletred;
+			 background-image:url(img/44.gif) ;
+		}
+		.ww p{
+			color: #DA70D6;
+			font-size: 20px;
+		}
+	</style>
+	<div class="ww">
+		<img src="" alt="">
+		<p>星空弹幕</p>
+       
+		<div id="boxa" style="top:0;left:0"><img src="img/timg19.gif" alt=""></div>
+		
+	</div>
+	<style type="text/css" media="screen">
+	        *{
+	            padding: 0;
+	            margin: 0;
+	        }
+	
+	       #boxa{
+	   
+	            position: absolute;
+	        }
+	    </style>
+	
+	    <script>
+	    var boxb=document.getElementById('boxa');
+	    var xSpeed=2;
+	    setInterval(function(){
+	        var x=parseInt(boxb.style.left)+xSpeed;
+	        //给动画设置边界
+	        if(x>800) xSpeed*=-1;
+	        else if(x<0) xSpeed*=-1;
+	        boxb.style.left=x+'px';
+	    },1000/80);
+	</script>
+	<div id="boxc" style="top:1900px;left:0">
+		<img src="img/timg17.gif" alt="">
+		<p><span style="color:red">圣诞节快乐 元旦快乐 新年快乐</span></p>
+		</div>
+	
+	<style type="text/css" media="screen">
+	        *{
+	            padding: 0;
+	            margin: 0;
+	        }
+	
+	       #boxc{
+	   
+	            position: absolute;
+	        }
+	    </style>
+	
+	    <script>
+	    var boxd=document.getElementById('boxc');
+	    var xSpeed=2;
+	    setInterval(function(){
+	        var x=parseInt(boxd.style.left)+xSpeed;
+	        //给动画设置边界
+	        if(x>800) xSpeed*=-1;
+	        else if(x<0) xSpeed*=-1;
+	        boxd.style.left=x+'px';
+	    },1000/60);
+	</script>
+	
+    <ul class="fix">
+        <li><img src="images/qq.png"></li>
+        <li><img src="images/zuji.png"></li>
+        <li><img src="images/erweima.png"></li>
+        <li><img src="images/gotop.png"></li>
+    </ul>
+</body>
+<script>
+		var oBox = document.getElementById('box');
+		var aBtn = oBox.getElementsByTagName('button');
+		var aDiv = oBox.getElementsByTagName('div');
+		for (var i = 0; i < aBtn.length; i++) {
+		    aBtn[i].index = i;//给每一个btn设置下标
+		    aBtn[i].onclick = function() {
+		        for (var i = 0; i < aBtn.length; i++) {
+		            aBtn[i].className = '';
+		            aDiv[i].style.display = 'none';
+		        }
+		        this.className = 'active';
+		        aDiv[this.index].style.display = 'block'//注意中括号中的this.index
+		    }
+		}
+	</script>
+	
+	<script>
+	           var box1=document.getElementById("box1");
+	           var oNavlist=document.getElementById("na").children;
+	           var slider=document.getElementById("slider");
+	           var left=document.getElementById("left");
+	           var right=document.getElementById("right");
+	           var index=1;
+	           var timer;
+	           var isMoving=false;
+	           function gStyle(obj, style){
+	            if(obj.currentStyle){
+	                return obj.currentStyle[style];
+	             } else {
+	                  return getComputedStyle(obj)[style];
+	             }
+	         }
+	         var w1 = document.getElementById("w1");
+	         onload = function(){
+	          var i = setInterval(function(){
+	            var now = parseInt(gStyle(w1,"right"));
+	            w1.style.right = now+1+"px";
+	            if(now>=800){
+	              w1.style.right=-270+"px";
+	            }
+	          },15)
+	         }
+	           function next(){
+	               if(isMoving){
+	                   return;
+	               }
+	                isMoving=true;
+	                index++;
+	                navChange();
+	                animate(slider,{left:-1200*index},function(){
+	                   if(index === 6){
+	                       slider.style.left="-1200px";
+	                       index=1;
+	                   }
+	                   isMoving=false;
+	               });
+	
+	               }
+	              
+	           function prev(){
+	            if(isMoving){
+	                   return;
+	               }
+	               isMoving=true;
+	               index--;
+	               navChange();
+	               animate(slider,{left:-1200*index},function(){
+	                   if(index ===0){
+	                       slider.style.left="-6000px";
+	                       index=5;
+	                   }
+	                   isMoving=false;
+	               });
+	           }
+	           var timer=setInterval(next,3000);
+				right.onclick=next;
+				left.onclick=prev;
+	           box1.onmouseover=function(){
+	               animate(left,{opacity:50});
+	               animate(right,{opacity:50});
+	               clearInterval(timer);
+	           }
+	           box1.onmouseout=function(){
+	               animate(left,{opacity:0});
+	               animate(right,{opacity:0});
+	               timer=setInterval(next,3000);
+	           }
+	           for(var i=0;i<oNavlist.length;i++){
+	            oNavlist[i].idx=i;
+	            oNavlist[i].onclick=function(){
+	                index=this.idx+1;
+	                animate(slider,{left:-1200*index});
+	            }
+	           }
+	           function navChange(){
+	               for(var i=0;i<oNavlist.length;i++){
+	                oNavlist[i].className=" ";
+	               }
+	               if(index===6){
+	                oNavlist[0].className="active";
+	               }else if(index===0){
+	                oNavlist[4].className="active";
+	               }else{
+	                oNavlist[(index-1+5)%5].className="active";
+	               }
+	           }
+	       </script>
+	
+</html>

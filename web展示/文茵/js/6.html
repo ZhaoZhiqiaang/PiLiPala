@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<img src="../images/1.png" id="img"/><!--这里是图片的展示区域-->
+	</body>
+	<script>
+	
+	var i =1;
+	
+	function $(id){
+	
+	return document.getElementById(id);
+	
+	}
+	
+	function add(){
+	
+	i++;//自增变化
+	
+	$("img").src="../images/"+i+".png";//实现对img.src属性控制
+	
+	if(i>2){   //注意控制图片数量
+	
+	i=0;
+	
+	}
+	
+	setTimeout('add()',1000);  //定时器控制播放时间
+	
+	}
+	
+	add();调用函数
+	
+	</script>
+</html>
